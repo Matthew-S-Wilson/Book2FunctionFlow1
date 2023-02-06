@@ -1,0 +1,26 @@
+const createWoodBlock = () => {
+    // Return an object with 4 properties.
+    // I need to add a parameter and define a variable to attach the 4 properties to
+     return {
+        type:"Wood Block",
+        length:10,
+        material:"pine",
+        purpose:"flute",
+     }
+     
+}
+
+
+const createBeautifulCarving = (woodBlock) => {
+    // Return a string representation of the object
+   // "The 10-inch, pine woodblock was carved into a wooden flute"
+   return `"The ${woodBlock.length}-in, ${woodBlock.material} wood block was carved into a wooden ${woodBlock.purpose}. "`
+}
+
+// The function returns a value, so that value is stored in a variable
+const woodBlock = createWoodBlock()
+console.log(woodBlock)
+// The function returns a value, so that value is stored in a variable
+const carvingString = createBeautifulCarving(woodBlock)  // <-- Missing an argument. Fix it.
+
+console.log(carvingString)
